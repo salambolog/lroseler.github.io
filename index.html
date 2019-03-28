@@ -7,85 +7,68 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        h1{
-            padding: .5em;
-            font-family: "Papyrus", fantasy;
-            text-align: center;
-            
-        }
-        body {
+         body{
          font-family: sans-serif;
-         background-color: #E7F7FF; 
+         height: 100%;
+         background-color: rgb(195, 244, 255, .7); 
          background-image: url("butterflyBack.jpg");
          background-repeat: no-repeat;
          background-position-x: center;
-       
-         
-        }
+         text-align: center;
         
-        .bdy{
-            background-color: hsl(200, 100%, 95%, .6); 
-            text-align: center;
-            border: 1px solid rgb(175, 209, 226);
-            border-radius: 20%;
-            margin-top: 15%;
-      
         }
-        ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-          
+        span{
+            border-bottom: 1px solid #333;
+        }
+        .box{
+            margin-top: 20%;
+            border: lightslategrey solid;
+            border-radius: 50%;
+            margin-left: 20%;
+            margin-right: 20%;
+            background-color: rgb(195, 244, 255, .7);
+            padding: 1em; 
             
         }
-        img{
-            opacity: .7;
-            width: 70%;
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:  rgba(14, 107, 127, 0.7);
+            font-size: small;
         }
-        li {
-        float: left; 
-        margin-left: 15%;
-       
-         }
-
-        li a {
-        display: block;
-        color: #E7F7FF;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        }
-
-        li a:hover {
-        background-color: #111;
-        }
-        li a.active{
-            background-color: dimgray;
-        }
-       
     </style>
-    <title>Laura's Website</title>
-   
-    
-   
-</head>
- <body>
-     <div>
-        <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <div class="bdy">
-        <h1>Laura Ashley Roesler </h1>
-        <p>Web Designer &#9672; Web Developer</p>
-    </div>
-    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </head>
 
+    <body>
+        
+        <div class="box">
+            <p style="font-family: 'Papyrus', fantasy;  font-size:xx-large;">Laura Ashley Roesler</p>
+            <p>&#9672</p>
+             <p>Web Developer</p>
+        </div>
+    
+        <div class="footer">
+            <p><sm>&#9784 Created by Laura Roesler &#9784</sm></p>
+        </div>
+    </body>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
