@@ -9,6 +9,7 @@
     <style>
          body{
          font-family: sans-serif;
+         
          background-image: radial-gradient( #8CF2FF, #33BACC, #207480);
          text-align: center;
         
@@ -41,10 +42,17 @@
             background-color:  rgba(14, 107, 127, 0.4);
             font-size: small;
         }
+        ul{
+            text-align: left;
+        }
+        li{
+            font-family: 'Courier New', Courier, monospace;
+        }
     </style>
-    <body  data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body  data-spy="scroll" data-target=".navbar" data-offset="10">
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark  fixed-top" style="margin-bottom: 20%">
+            <a class="navbar-brand" href="#home"><img width="30" height="30" class="d-inline-block align-top"src="butterflyLogo.jpg" alt="butt"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,6 +67,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#resume">Resume</a>
                 </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
@@ -93,9 +104,93 @@
     </div> <!--about-->
 
     <div id="resume" >
-        <h2 stlye="margin-bottom: 15%; margin-top: 6em">R<span>esum</span>e</h2>
-            <img src="resumeSnip.jpg" class="img-fluid" alt="resume">
+        <h2 stlye="padding-bottom:6em; margin-bottom: 2em; margin-top: 6em">R<span>esum</span>e</h2>
+           <!-- <img src="resumeSnip.jpg" class="img-fluid" alt="resume"> -->
+           <div class="conatianer-fluid" >
+               <div class="row">
+               <div class="col-4" style="text-align:left; padding-left: 2%">
+                <h4 style="padding-top: 2em;"><span>Contact Info</span></h4>
+                <p>Atlanta, GA</p>
+                <a style="color:rgb(6, 106, 136)" href="https://github.com/lroseler">https://github.com/lroseler</a><br> 
+                <a style="color:rgb(6, 106, 136)" href="Laura.roesler@outlook.com">Laura.roesler@outlook.com</a>
+                <h6><span>Programming Languages</span></h6>
+                <ul>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                </ul>
+                <h6><span>Scripting Languages</span></h6>
+                <ul>
+                    <li>Linux Shell Commands</li>
+                    <li>BASH</li>
+                </ul>
+                <h6><span>Frameworks</span></h6>
+                <ul>
+                    <li>Bootstrap</li>
+                </ul>
+                <h6><span>Libraries</span></h6>
+                <ul>
+                    <li>React</li>
+                    <li>jQuery</li>
+                </ul>
+                <h6><span>Markup Languages</span></h6>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>XML</li>
+                    <li>JSX</li>
+                </ul>
+                <h6><span>Education</span></h6>
+                <ul>
+                    <li>Georgia State University</li>
+                    <ul>
+                       <li> BS in Computer Science</li>
+                    </ul>
+                    <li>Georgia Perimeter College</li>
+                    <ul>
+                       <li> AAS in Computer Science</li>
+                    </ul>
+                </ul>
+                <h6><span>Coursework</span></h6>
+                <ul>
+                    <li>Semantic Web</li>
+                    <li>Big Data Programming</li>
+                    <li>Web Development</li>
+                    <li>Computer Networks</li>
+                </ul>
+                <h6><span>Certifications</span></h6>
+                <ul>
+                    <li>LinkedIn Learning: JavaScript Essential Training</li>
+                </ul>
+                <h6><span>Military Certifications</span></h6>
+                <ul>
+                    <li>Army Acheievement Medal</li>
+                    <li>Trained by the US Army as an Intelligence Analyst</li>
+                    <li>Blue Force Tracking Systems</li>
+                </ul>
+               </div>
+               <div class="col-6">
+                <h4 style="padding-top: 2em;"><span>Summary</span></h4>
+                <p style="text-align:left">College graduate with experience in Object Oriented Programming, web development and design, and software development. Highly motivated self-managing business professional with insight, creativity, focused determination, and loyalty. Understands and can meet the demands of a fast-paced environment with familiarity of both Waterfall and Agile/Scrum methodologies to analyze and refactor pervious code. Understands the importance of communication as well as information security. Exceptional attention to detail with a high value for work ethic.</p><br>
+                <br>
+                <h4><span>Experience</span></h4>
+                <h6><b>Turner Brodcasting January 2019-May 2019</b></h5>
+                <p style="text-align:left">Practice with building an entire interactive website that collects and displays information from several databases across the company and provide updates as content is migrated from one source to another. Experience with creating a ASP.NET platform to test the development of the website in different environments from local to production. Training with API calls and SQL queries to concatenate the appropriate data. Engaged in Scrum and Agile methodologies. Involvement with version control Git, Gitlab, GitHub. </p><br>
+                <br>
+                <h6><b>HP Enterprise NMCI Contract August 2011-August 2012</b></h5>
+                <p style="text-align:left">Uses all available resources to determine the significance and reliability of incoming information to prepare situational reports and executive briefings. Engages the supporting capabilities to complete high-priority tasks in order for the organization to rapidly meet shifting demands. Contributes to the team's ability to meet target goals through participation in continuous service improvement initiatives. Maintains a high level of customer satisfaction by clarifying customer expectations, taking ownership of the assignments and ensuring that they are met in a timely manner. Responds to service, product, technical, and customer relations questions. </p>
+               </div>
+            </div>
+           </div>
     </div> <!--resume-->
+
+    <div id="projects" >
+            <h2 stlye="margin-bottom: 15%; margin-top: 6em">Pr<span>ojec</span>ts</h2>
+            <img src="bootstrap.png" class="img-thumbnail" style="height: 4em" alt="boot icon">
+            <a style="color:rgb(6, 106, 136)" href='https://github.com/lroseler/BootstrapBeginners'>Bootstrap Framework Pet Sitting Website</a><br><br>
+            <img src="reactBoot.png" class="img-thumbnail" style="height: 4em" alt="react">
+            <a style="color:rgb(6, 106, 136)"  href='https://github.com/lroseler/WeddingWebsite'> React Bootstrap Wedding Website</a>
+        </div> <!--projects-->
 
     <div id="contact" style="margin-bottom: 30%; margin-top: 6em">
             <h2  style="margin-top:10%; margin-bottom: 5%">Co<span>ntact M</span>e</h2>
