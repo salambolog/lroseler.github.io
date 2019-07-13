@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Varela+Round&display=swap');
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#home {
+    margin: 32px auto;
+}
+
+.card {
+    font-size: xx-large;
+    border: none;
+    border-bottom: 2px solid #f5f6f7;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(#06BC9B), to(#1ba49c));
+    padding: 3rem 5rem;
+}
+
+.card>h1 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+}
+
+.footer>p {
+    float: right;
+    padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: #63707e;
+}
+
+a,
+p {
+    color: rgba(82, 93, 104, .7);
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 30px;
+    color: #63707e;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+h6 {
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(82, 93, 104, .7);
+    color: #06BC9B;
+    margin-left: -1em;
+}
+
+div#resume li {
+	list-style: disclosure-closed;
+}
+
+a.nav-link {
+    color: rgba(82, 93, 104, .7);
+    font-size: 15px !important;
+    line-height: 20px;
+    margin-left: 1em;
+}
+
+.img-thumbnail {
+    display: none;
+}
