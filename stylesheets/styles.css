@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Varela+Round&display=swap');
 
+
 body {
     font-family: sans-serif;
     text-align: center;
@@ -7,6 +8,10 @@ body {
 
 #home {
     margin: 32px auto 6rem;
+}
+
+#home>p {
+    margin-top: auto;
 }
 
 .card {
@@ -18,14 +23,6 @@ body {
     border-right: none;
     background-image: -webkit-gradient(linear, left top, right top, from(#06BC9B), to(#1ba49c));
     padding: 3rem 5rem;
-}
-
-.card>h1 {
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .footer {
@@ -55,7 +52,7 @@ a,
 p {
     color: rgba(82, 93, 104, .7);
     line-height: 1.7em;
-	word-spacing: .02em;
+    word-spacing: .02em;
 }
 
 a {
@@ -69,8 +66,12 @@ h1 {
     padding-bottom: 40px;
 }
 
+h2 {
+    margin: 16px 0;
+}
+
 h6 {
-	color: #06BC9B;
+    color: #06BC9B;
     text-align: left;
 }
 
@@ -86,11 +87,11 @@ li {
 }
 
 #resume {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 div#resume li {
-	list-style: disclosure-closed;
+    list-style: disclosure-closed;
 }
 
 a.nav-link {
@@ -101,19 +102,139 @@ a.nav-link {
 }
 
 .img-thumbnail {
-    display: none;
+    padding: 0;
+    border-radius: 25px;
+    border: none;
 }
 
 .container {
-	padding-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 /*/////animate.css*/
 .row {
-  animation-duration: 0.1s;
-  animation-delay: 0.2s;
+    animation-duration: 0.1s;
+    animation-delay: 0.2s;
 }
 
 .bodyText {
-	margin: 0 auto;
+    margin: 0 auto;
+}
+
+.bodyText h2 {
+    color: rgba(82, 93, 104, .7);
+    text-align: center;
+}
+
+.card>h1,
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card>h1.sans {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 800;
+}
+
+
+@media all and (max-width: 720px) {
+    #home {
+        margin: 1em auto 2em;
+    }
+
+    .bodyText h2 {
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .card {
+        padding: 1rem 2rem;
+    }
+
+    .selfie {
+        width: 120px;
+        margin: 2rem auto 1rem;
+    }
+
+    img.thumbnail {
+        border: none;
+        padding: 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+
+    h2, .bodyText > h2 {
+        text-align: left;
+        font-size: 24px;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 900;
+        margin-top: 1rem;
+        padding: 0;
+        color: rgb(48, 55, 55);
+    }
+
+	#home > .card > h2 {
+		color: #fff;
+	}
+
+    h5 {
+        font-family: 'Varela Round', sans-serif;
+        text-align: left;
+        font-size: 1rem;
+		padding: 1rem 7rem 0 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: 0.5px;
+        margin: 16px 0px;
+        text-align: left;
+        color: rgb(48, 55, 55);
+    }
+
+    .about > h2 {
+
+    }
+
+    .about > p {
+    	margin: 0;
+    }
+
+    #projects {
+    	padding: 1rem 0 0;
+    }
+
+    .miniContainer {
+    	display: flex;
+    	text-align: left;
+    }
+
+    .left, a {
+    	display: block;
+    	text-align: left;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 900;
+        padding: 0;
+    }
+
+    .miniContainer > .img-thumbnail {
+    	margin-right: 1rem;
+    }
+
+}
+
+.react {
+	background: url("imgs/code.svg");
+}
+.custom-toggler.navbar-toggler {
+    border-color: #5dceca;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

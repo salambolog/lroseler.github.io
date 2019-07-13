@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 border-bottom border-left border-right fixed-height">
+            <div class="col-md-12 fixed-height">
                 <div data-spy="scroll" data-target=".navbar" data-offset="10">
                     <nav class="navbar navbar-expand-md">
                         <a class="navbar-brand" href="index.html"><img width="30" height="30" class="d-inline-block align-top" src="imgs/butterflyLogo.jpg" alt="butt"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -27,7 +28,7 @@
                                     <a class="nav-link" href="resume.html">Resume</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="_blank" href="projects.html">Projects</a>
+                                    <a class="nav-link" href="projects.html">Projects</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" target="_blank" href="https://github.com/lroseler">Github</a>
@@ -39,18 +40,26 @@
                         </div>
                     </nav>
                 </div>
-                <div id="card">
-                    <div id="projects">
+                <div id="home">
+                    <div class="card">
                         <h2>Projects</h2>
-                        <img src="bootstrap.png" class="img-thumbnail" alt="boot icon">
-                        <a href='https://github.com/lroseler/yogaStudio'>Yoga Site</a><br><br>
-                        <img src="bootstrap.png" class="img-thumbnail" alt="react">
-                        <a href='https://github.com/lroseler/WeddingWebsite'> Wedding Website</a><br><br>
-                        <img src="microsoftAzure.png" class="img-thumbnail" alt="react">
-                        <a href='https://petsittingwebsite.azurewebsites.net/Home'>Pet Sitting Website</a><br><br>
+                    </div>
+                    <div id="projects">
+                        <div class="miniContainer">
+                            <img src="imgs/svg/code.svg" class="img-thumbnail" alt="boot icon">
+                            <a href='https://github.com/lroseler/yogaStudio'>Yoga Site</a>
+                        </div>
+                        <div class="miniContainer">
+                            <img src="imgs/svg/github-action.svg" class="img-thumbnail" alt="react">
+                            <a href='https://github.com/lroseler/WeddingWebsite'> Wedding Website</a>
+                        </div>
+                        <div class="miniContainer">
+                            <img src="imgs/svg/code.svg" class="img-thumbnail" alt="react">
+                            <a href='https://petsittingwebsite.azurewebsites.net/Home'>Pet Sitting Website</a>
+                        </div>
                     </div>
                     <!--projects-->
-                    <div class="container-fluid">
+                    <div class="left">
                         <a href="https://github.com/lroseler"><img src="github.png" class="img-thumbnail" alt="github"></a>
                         <a href="https://www.linkedin.com/in/laura-roesler-74a82a165/"><img src="linkedin.png" class="img-thumbnail" alt="linkedin"></a>
                         <a href="https://www.facebook.com/laura.roesler.5"><img src="facebook.jpg" class="img-thumbnail" alt="facebook"></a>
